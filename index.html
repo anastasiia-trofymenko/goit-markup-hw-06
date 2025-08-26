@@ -54,8 +54,81 @@
             </li>
           </ul>
         </address>
+
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close="">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="menu-nav-list">
+              <li class="nav-item">
+                <a class="menu-link" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-item">
+                <a class="menu-link" href="">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="menu-contacts">
+            <ul class="menu-contacts-list">
+              <li class="menu-contacts-item">
+                <a class="menu-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="menu-contacts-item">
+                <a class="menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-links-list">
+            <li class="social-list-item">
+              <a class="social-link" href="" target="_blank">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-link" href="" target="_blank"
+                ><svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-link" href="" target="_blank"
+                ><svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-link" href="" target="_blank"
+                ><svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
     <main>
       <section class="section-page-title">
         <div class="container">
@@ -76,8 +149,8 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="item-title">Strategy</h3>
-              <p class="item-text">
+              <h3 class="benefits-item-title">Strategy</h3>
+              <p class="benefits-item-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -88,8 +161,8 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="item-title">Punctuality</h3>
-              <p class="item-text">
+              <h3 class="benefits-item-title">Punctuality</h3>
+              <p class="benefits-item-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -100,8 +173,8 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="item-title">Diligence</h3>
-              <p class="item-text">
+              <h3 class="benefits-item-title">Diligence</h3>
+              <p class="benefits-item-text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
@@ -112,8 +185,8 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="item-title">Technologies</h3>
-              <p class="item-text">
+              <h3 class="benefits-item-title">Technologies</h3>
+              <p class="benefits-item-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -442,7 +515,7 @@
         <div class="email-container">
           <p class="email-input-text">Subscribe</p>
           <form class="subscribe-form">
-            <label class="form-label">
+            <label class="footer-label">
               <input
                 class="form-input"
                 type="email"
@@ -541,8 +614,10 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-link" href="">Privacy Policy</a>
+              <span class="checkbox-line"
+                >I accept the terms and conditions of the
+                <a class="privacy-link" href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
@@ -552,5 +627,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
