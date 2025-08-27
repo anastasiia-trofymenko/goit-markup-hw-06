@@ -361,10 +361,18 @@ button {
   color: #4d5ae5;
 }
 
+.active {
+  color: #404bbf;
+}
+
 .social-links-list {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.menu-links-list {
+  justify-content: left;
   gap: 40px;
 }
 
@@ -391,6 +399,11 @@ button {
 
 .social-icon {
   fill: #f4f4fd;
+}
+
+.menu-links-list .social-icon {
+  width: 24px;
+  height: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -623,7 +636,7 @@ button {
   }
 
   .benefits-item-text {
-    font-weight: 400px;
+    font-weight: 400;
   }
 }
 
@@ -683,7 +696,7 @@ button {
   margin-bottom: 8px;
 }
 
-.social-links-list {
+.team-card-content .social-links-list {
   gap: 24px;
 }
 
@@ -934,8 +947,7 @@ button {
     align-items: baseline;
     justify-content: start;
 
-    margin-left: 108px;
-    padding: 0;
+    padding: 0 108px;
   }
 
   .footer-logo {
